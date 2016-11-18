@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/statTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/stats_list_title_font_size"
+        android:text="TextTitle"
+        android:textColor="#BF3700"/>
+    <TextView
+        android:id="@+id/statStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/stats_list_stats_font_size"
+        android:paddingLeft="@dimen/stats_list_padding"
+        android:paddingRight="@dimen/stats_list_padding"
+        android:text="Stats stats stats"
+        android:textColor="#333333"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="widget_width">250dp</dimen>
+    <dimen name="widget_height">180dp</dimen>
+    <dimen name="clockless_widget_height">110dp</dimen>
+    <dimen name="stats_list_title_font_size">24sp</dimen>
+    <dimen name="stats_list_stats_font_size">16sp</dimen>
+    <dimen name="stats_list_padding">8dp</dimen>
+    <dimen name="mainmenu_rows_padding">24dp</dimen>
+
+    <dimen name="theme_widget_height">128dp</dimen>
+    <dimen name="theme_widget_padding">8dp</dimen>
+    <dimen name="theme_widget_thumbnail_size">112dp</dimen>
+    <dimen name="theme_widget_progbar_margintop">106dp</dimen>
+</resources>

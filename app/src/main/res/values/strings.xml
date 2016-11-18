@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Cool Device Stats</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="unsupported_device">Unsupported Device!</string>
+
+    <string name="status">Status</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="copied_to_clipboard">Copied to Clipboard</string>
+    <string name="network_name">Network Name</string>
+    <string name="signal_strength">Signal Strength</string>
+    <string name="link_speed">Link Speed</string>
+    <string name="ap_mac_address">Access Point MAC Address</string>
+    <string name="mac_address">Device MAC Address</string>
+    <string name="ip_address">IP Address</string>
+
+    <string name="charging_status">Charging Status</string>
+    <string name="usb_charging">Charging with USB</string>
+    <string name="ac_charging">Charging with AC Power</string>
+    <string name="discharging">Discharging</string>
+    <string name="remaining_battery">Remaining Battery</string>
+    <string name="temperature">Temperature</string>
+    <string name="voltage">Voltage</string>
+    <string name="millivolt">milliVolt</string>
+
+    <string name="internal_storage">Internal Storage</string>
+    <string name="external_storage">External Storage</string>
+    <string name="no_external_storage">No external storage is present!</string>
+    <string name="memory_used">Memory(Used)</string>
+    <string name="memory_active">Memory(Active)</string>
+
+    <string name="active_cores">Active Cores</string>
+    <string name="total_cpu">Total CPU Activity</string>
+    <string name="core_activity">Core # activity</string>
+    <string name="processes">Processes</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="provider_name">Provider Name</string>
+    <string name="location_area_code">Location Area Code</string>
+    <string name="cell_id">Cell ID (BTS ID)</string>
+
+    <string name="_new_">(New)</string>
+    <string name="buy_and_download">Download</string>
+    <string name="set_theme">Set Theme</string>
+
+    <string name="battery_stats">Battery Statistics</string>
+    <string name="cpu_stats">Cpu Statistics</string>
+    <string name="memory_stats">Memory Statistics</string>
+    <string name="processes_stats">Processes Statistics</string>
+    <string name="wifi_stats">WiFi Statistics</string>
+    <string name="cellular_info">Cellular Info</string>
+    <string name="widget_themes">Widget Themes</string>
+    <string name="about">About</string>
+
+    <string name="theme_changed">Theme Changed</string>
+
+    <string name="no_internet">No Internet Connectivity</string>
+
+    <string name="pick_widget_background_color">Pick the widget\'s background color</string>
+
+    <string name="title_activity_battery_stats">Battery Statistics</string>
+    <string name="title_activity_memory_status">Memory Statistics</string>
+    <string name="title_activity_cpu_stats">CPU Statistics</string>
+    <string name="title_activity_processes">Processes</string>
+    <string name="title_activity_themes">Widget Themes</string>
+    <string name="title_activity_cellular_stats">Cellular Statistics</string>
+    <string name="title_activity_wifi_stats">WiFi Statistics</string>
+
+    <string name="title_activity_theme_preview">Theme Preview</string>
+    <string name="unknown">Unknown</string>
+    <string name="offline">Offline</string>
+    <string name="theme_successfully_downloaded">The theme was successfully downloaded.</string>
+    <string name="theme_download_failed">Something went wrong while trying to download the theme!</string>
+    <string name="theme_purchase_successful">_themename_ theme was successfully purchased.</string>
+    <string name="clockless_widget">Cool Device Stats - Clockless</string>
+</resources>

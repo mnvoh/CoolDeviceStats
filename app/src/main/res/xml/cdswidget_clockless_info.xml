@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="@dimen/widget_width"
+                    android:minHeight="@dimen/clockless_widget_height"
+                    android:minResizeWidth="@dimen/widget_width"
+                    android:minResizeHeight="@dimen/clockless_widget_height"
+                    android:updatePeriodMillis="1800000"
+                    android:previewImage="@drawable/clockless_widget_icon"
+                    android:initialLayout="@layout/cdswidget_clockless"
+                    android:widgetCategory="home_screen">
+</appwidget-provider>

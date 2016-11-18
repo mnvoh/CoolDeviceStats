@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="@dimen/theme_widget_thumbnail_size"
+        android:layout_height="@dimen/theme_widget_thumbnail_size">
+        <ImageView
+            android:id="@+id/imvThemeThumbnail"
+            android:src="@drawable/question_mark"
+            android:background="#00e7e7e7"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ProgressBar
+            android:id="@+id/pbThemeDownloadProgress"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            android:clickable="false"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="false"
+        android:paddingLeft="@dimen/theme_widget_padding">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txvThemeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/widget_themes"
+                android:textSize="19sp"
+                android:clickable="false" />
+            <TextView
+                android:id="@+id/txvIsNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_new_"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-5dp"
+                android:textColor="#ffaa0000"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnThemeAction"
+            android:background="@drawable/download_button_selector"
+            android:textColor="#FFEEEEEE"
+            android:shadowColor="#FF000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8px"
+            android:paddingRight="4px"
+            android:gravity="center"
+            android:clickable="true" />
+    </LinearLayout>
+</merge>

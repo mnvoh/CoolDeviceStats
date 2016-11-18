@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context="ir.kcoder.cooldevicestats.MainActivity"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:orientation="vertical">
+    <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:id="@+id/scrollView2">
+            <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/mainmenu_rows_padding">
+
+                    <ImageButton
+                        android:id="@+id/btnBatteryStats"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/battery"
+                        android:contentDescription="@string/battery_stats"
+                        android:onClick="launchBatteryStats"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnCpuStats"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/cpu"
+                        android:contentDescription="@string/cpu_stats"
+                        android:onClick="launchCpuStats"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnMemoryStats"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.34"
+                        android:src="@drawable/memory"
+                        android:contentDescription="@string/memory_stats"
+                        android:onClick="launchMemoryStats"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/mainmenu_rows_padding">
+
+                    <ImageButton
+                        android:id="@+id/btnProcessesStats"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/processes"
+                        android:contentDescription="@string/processes_stats"
+                        android:onClick="launchProcessesStats"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnWifiStats"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/wifi"
+                        android:contentDescription="@string/wifi_stats"
+                        android:onClick="launchWifiStats"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnCellular"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/cell"
+                        android:contentDescription="@string/cellular_info"
+                        android:onClick="launchCellularStats"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/mainmenu_rows_padding">
+
+                    <ImageButton
+                        android:id="@+id/btnSettings"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.34"
+                        android:src="@drawable/settings"
+                        android:contentDescription="@string/action_settings"
+                        android:onClick="launchSettings"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnThemes"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/themes"
+                        android:contentDescription="@string/widget_themes"
+                        android:onClick="launchThemes"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnAbout"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33"
+                        android:src="@drawable/about"
+                        android:contentDescription="@string/about"
+                        android:onClick="launchHelp"
+                        />
+
+
+                </TableRow>
+            </TableLayout>
+    </ScrollView>
+</LinearLayout>

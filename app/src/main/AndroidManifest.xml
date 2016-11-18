@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.kcoder.cooldevicestats" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WidgetSettingsActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+
+        <receiver android:name="ir.kcoder.KDeviceStats.KBatteryStats$PowerConnectionReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- The main app widget -->
+        <receiver android:name=".CDSWidgetProvider" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ir.kcoder.action.AUTO_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cdswidget_info" />
+        </receiver>
+
+        <!-- The clockless app widget -->
+        <receiver android:name=".CDSWidgetProvider4x2" android:label="@string/clockless_widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ir.kcoder.action.AUTO_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cdswidget_clockless_info" />
+        </receiver>
+
+        <activity
+            android:name=".WifiStatsActivity"
+            android:icon="@drawable/wifi"
+            android:label="@string/title_activity_wifi_stats" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BatteryStatsActivity"
+            android:icon="@drawable/battery"
+            android:label="@string/title_activity_battery_stats" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MemoryStatusActivity"
+            android:icon="@drawable/memory"
+            android:label="@string/title_activity_memory_status" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CpuStatsActivity"
+            android:icon="@drawable/cpu"
+            android:label="@string/title_activity_cpu_stats" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ProcessesActivity"
+            android:icon="@drawable/processes"
+            android:label="@string/title_activity_processes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ThemesActivity"
+            android:icon="@drawable/themes"
+            android:label="@string/title_activity_themes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CellularStatsActivity"
+            android:label="@string/title_activity_cellular_stats"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ThemePreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_theme_preview"
+            android:parentActivityName=".ThemesActivity"
+            android:theme="@style/FullscreenTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ir.kcoder.cooldevicestats.ThemesActivity" />
+        </activity>
+    </application>
+
+</manifest>
