@@ -1,4 +1,4 @@
-#Cool Device Stats
+# Cool Device Stats
 **Android hardware statistics with themeable widgets**
 
 -----
